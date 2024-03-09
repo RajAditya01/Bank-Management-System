@@ -1,7 +1,5 @@
 package bank.management.system;
-
-import com.toedter.calendar.JDateChooser;
-
+import java.awt.Color;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -194,7 +192,7 @@ public class Signup extends JFrame implements ActionListener {
         String formno = first;
         String name = textName.getText();
         String fname = textFname.getText();
-        String dob = ((JTextField) dateChooser.getDateEditor().getUiComponent()).getText();
+        String dob = ((JTextField) ((Object) dateChooser.getDateEditor()).getUiComponent()).getText();
         String gender = null;
         if(r1.isSelected()){
             gender = "Male";
